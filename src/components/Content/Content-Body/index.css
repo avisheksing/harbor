@@ -1,0 +1,300 @@
+.harbor-content-body-main{
+    margin: 10px 0px;
+    padding: 20px 0px;
+    overflow-y: scroll;
+    height: auto;
+    max-height: 100%;
+}
+
+.harbor-content-card{
+    min-height: 112px;
+    max-height: 144px;
+    background-color: #FFFFFF;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 26px 32px;
+}
+
+.harbor-content-card:last-child{
+    margin-bottom: 0px !important;
+}
+
+.status-failed{
+    background-color: #FDF7F8;
+    border: 1px solid #CD3A4C;
+}
+
+.status-killed{
+    background: #F6F8FA;
+    border: 1px solid #DDDDDD;
+    color: #666666;
+}
+
+.harbor-task-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+
+.harbor-task-title span{
+    font-weight: 600;
+    font-size: 14px;
+    padding: 2px 12px;
+    background: #F6F6F6;
+    border-radius: 40px;
+    color: #999999;
+    margin-left: 16px;
+}
+
+.harbor-task-sucess-status{
+    padding: 5px 0px;
+    text-align: right;
+}
+
+.harbor-task-sucess-status svg{
+    height: 14px;
+    width: 14px;
+    fill: #509900;
+}
+
+.harbor-task-sucess-status svg path{
+    fill: #509900;
+}
+
+.harbor-task-sucess-status span{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #509900;
+    position: relative;
+    top: -2px;
+    left: 3px;
+}
+
+.harbor-task-action-settings{
+    padding: 5px 0px;
+    text-align: right;
+}
+
+.harbor-task-action-settings:hover{
+    cursor: pointer;
+}
+
+.harbor-task-action-settings svg{
+    height: 13px;
+    width: 13px;
+    fill: #2F80ED;
+}
+
+.harbor-task-action-settings span{
+    font-weight: 600;
+    font-size: 14px;
+    color: #2F80ED;
+    position: relative;
+    top: -1px;
+}
+
+.task-details-column{
+    margin-bottom: 12px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.task-details-column:last-child{
+    margin: 0px !important;
+}
+
+.dot-div{
+    text-align: right;
+}
+
+.move-top{
+    top: -2px;
+}
+
+.dot-div span{
+    background-color: #DDDDDD;
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+}
+
+.task-off-chain-counter{
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+}
+
+.task-block-chain-counter{
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+    text-align: right;
+}
+
+.task-timer-last-update{
+    text-align: right;
+}
+
+.task-timer-last-update svg{
+    width: 14px;
+    height: 14px;
+    position: relative;
+    fill: #999999;
+}
+
+.task-timer-last-update path{
+    fill: #999999;
+}
+
+.task-timer-last-update span{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    color: #999999;
+    position: relative;
+    top: -2px;
+}
+
+.task-block-chain-avatar-group{
+    position: relative;
+    top: -4px;
+}
+
+.task-block-chain-avatar-group span{
+    width: 28px;
+    height: 28px;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: block;
+    flex-direction: row;
+    background-color: white;
+}
+
+.task-block-chain-avatar-group img{
+    height: 16px;
+    width: 16px;
+    padding-right: 0px;
+    margin-left: 0px;
+}
+
+.harbor-task-killed-status{
+    padding: 5px 0px;
+    text-align: right;
+}
+
+.harbor-task-killed-status svg{
+    height: 14px;
+    width: 14px;
+    fill: #AAAAAA;
+}
+
+.harbor-task-killed-status svg path{
+    fill: #AAAAAA;
+}
+
+.harbor-task-killed-status span{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #AAAAAA;
+    position: relative;
+    top: -2px;
+    left: 3px;
+}
+
+.harbor-task-failed-status{
+    padding: 5px 0px;
+}
+
+.harbor-task-failed-status svg{
+    height: 14px;
+    width: 14px;
+    fill: #CD3A4C;
+}
+
+.harbor-task-failed-status svg path{
+    fill: #CD3A4C;
+}
+
+.harbor-task-failed-status span{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #CD3A4C;
+    position: relative;
+    top: -2px;
+    left: 3px;
+}
+
+.harbor-task-in-progress-status{
+    padding: 5px 0px;
+    text-align: right;
+}
+
+.harbor-task-in-progress-status svg{
+    height: 14px;
+    width: 14px;
+    fill: #DB9000;
+}
+
+.harbor-task-in-progress-status svg path{
+    fill: #DB9000;
+}
+
+.harbor-task-in-progress-status span{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #DB9000;
+    position: relative;
+    top: -2px;
+    left: 3px;
+}
+
+.disable-now span{
+    color: #AAAAAA !important;
+}
+
+.disable-now svg{
+    fill: #AAAAAA;
+}
+
+.in-progress-off-chain svg{
+    height: 14px;
+    width: 14px;
+    fill: #DB9000;
+}
+
+.in-progress-off-chain path{
+    fill: #DB9000;
+}
+
+.in-progress-off-chain span{
+    font-weight: 600;
+    font-size: 14px;
+    color: #DB9000;
+}
+
+.no-content-found{
+    width: 100%;
+    height: auto;
+    color: #DB9000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.text-to-right{
+    text-align: right;
+}
+
+.border-gray{
+    border: 1px solid #DDDDDD !important;
+}

@@ -1,0 +1,82 @@
+.harbor-header{
+    height: 60px !important;
+    padding: 16px 13px !important;
+    background-color: #222222 !important;
+}
+
+.harbor-header .ant-row{
+    height: 28px;
+}
+
+.harbor-header .ant-row .ant-col{
+    height: 28px;
+}
+
+.header-element{
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.harbor-logo-header{
+    height: 26px !important;
+    width: auto !important;
+    display: inherit !important;
+    float: left;
+    color: #FFFFFF;
+}
+
+.harbor-menu{
+    background-color: transparent;
+    height: 26px;
+}
+
+.harbor-menu li{
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+}
+
+.harbor-menu svg{
+    height: 15px;
+    width: 13px;
+    fill: #AAAAAA;
+    color: #AAAAAA;
+    position: relative;
+    top: -22px;
+}
+
+.harbor-menu span{
+    color: #AAAAAA;
+    position: relative;
+    top: -22px;
+}
+
+.harbor-menu .ant-menu-item-active:hover, .harbor-menu .ant-menu-item-active:after, .harbor-menu .ant-menu-item-active:active{
+    background-color: #aaaaaa24  !important;
+    border-bottom: 0px !important;
+    border-bottom-width: 0px !important;
+    border-bottom-color: transparent !important;
+    border-radius: 3px !important;
+}
+
+.user-drop-down{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: -19px;
+}
+
+.user-drop-down:hover{
+    cursor: pointer;
+}
+
+.drop-down-icon-user{
+    width: 12px;
+    height: 8px;
+    font-weight: 600;
+}
+
+.drop-down-icon-user svg{
+    fill: #AAAAAA;
+    width: 12px;
+    height: 12px;
+}

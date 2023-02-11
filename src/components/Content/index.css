@@ -1,0 +1,38 @@
+.content-header-action{
+    width: 100%;
+    height: auto;
+}
+
+.harbor-content-title{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+    margin: 0px;
+}
+
+.harbor-header-content-anchor{
+    padding: 3px 0px;
+}
+
+.harbor-header-content-anchor svg{
+    height: 13px;
+    width: 12px;
+    fill: #2F80ED;
+    color: #2F80ED;
+    position: relative;
+    display: inline;
+    top: 1px;
+    left: 0px;
+}
+
+.harbor-header-content-anchor path{
+    fill: #2F80ED !important;
+}
+
+.harbor-header-content-anchor span{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    color: #2F80ED;
+}

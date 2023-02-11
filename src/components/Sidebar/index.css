@@ -1,0 +1,95 @@
+.harbor-back-button{
+    padding: 13px 10px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.harbor-back-button:hover{
+    cursor: pointer;
+    background-color: #e6e5e53e;
+}
+
+.harbor-back-icon{
+    height: 15px;
+    width: 13px;
+    fill: #AAAAAA;
+    color: #AAAAAA;
+    position: relative;
+    display: inline;
+    top: 2px;
+    left: 0px;
+}
+
+.harbor-sidebar span{
+    position: relative;
+    left: 10px;
+}
+
+.harbor-route-item-icon{
+    height: 15px;
+    width: 16px;
+    fill: #DDDDDD;
+    color: #DDDDDD;
+    position: relative;
+    display: inline;
+    top: 2px;
+    left: 0px;
+}
+
+.harbor-route-item-icon path{
+    fill: #DDDDDD !important;
+}
+
+.harbor-side-panel-action{
+    padding: 0px 10px;
+}
+
+.harbor-list-item .ant-list-header, .harbor-list-item .ant-list-item{
+    border-block-end : 0px !important;
+}
+
+.harbor-list-item .ant-list-item:hover{
+    cursor: pointer;
+    background-color: #F6F8FA;
+    border-radius: 3px;
+}
+
+.harbor-list-item .ant-list-header span{
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    position: relative;
+    left: 8px;
+}
+
+.harbor-action-icon-sidepanel{
+    height: 16px;
+    width: 12px;
+    fill: #000000;
+    color: #000000;
+    position: relative;
+    display: inline;
+    top: 1px;
+    left: 0px;
+}
+
+.harbor-list-item .ant-list-items .harbor-list-item-title{
+    position: relative;
+    left: -20px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.selected-list-item{
+    background-color: #F6F8FA;
+    border-radius: 3px;
+}
+
+.selected-list-item svg{
+    fill: #2F80ED !important;
+}
+
+.selected-list-item .harbor-list-item-title{
+    color: #2F80ED !important;
+}

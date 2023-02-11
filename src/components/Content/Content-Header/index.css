@@ -1,0 +1,106 @@
+.harbor-filter{
+    text-align: center;
+    position: relative;
+    top: 7px;
+}
+
+.harbor-filter:hover{
+    cursor: pointer;
+}
+
+.harbor-filter .ant-space-item:first-child{
+    position: relative;
+    top: -1px;
+    color: #999999;
+}
+
+.harbor-filter-all-icon{
+    width: 12px;
+    height: 12px;
+    fill: #2F80ED;
+    position: relative;
+}
+
+.harbor-filter-all-icon path{
+    fill: #2F80ED;
+}
+
+.harbor-filter-running-icon{
+    width: 12px;
+    height: 12px;
+    fill: #509900;
+    position: relative;
+}
+
+.harbor-filter-running-icon path{
+    fill: #509900;
+}
+
+.harbor-filter-pending-icon{
+    width: 12px;
+    height: 12px;
+    fill: #DB9000;
+    position: relative;
+}
+
+.harbor-filter-pending-icon path{
+    fill: #DB9000;
+}
+
+.harbor-filter-failed-icon{
+    width: 12px;
+    height: 12px;
+    fill: #CD3A4C;
+    position: relative;
+}
+
+.harbor-filter-failed-icon path{
+    fill: #CD3A4C;
+}
+
+.harbor-filter-killed-icon{
+    width: 12px;
+    height: 12px;
+    fill: #555555;
+    position: relative;
+}
+
+.harbor-filter-killed-icon path{
+    fill: #555555;
+}
+
+.all-selected-filter-item{
+    color: #2F80ED !important;
+    font-weight: 600 !important;
+}
+
+.running-filter-item{
+    color: #509900 !important;
+    font-weight: 600 !important;
+}
+
+.in-progress-filter-item{
+    color: #DB9000 !important;
+    font-weight: 600 !important;
+}
+
+.failed-filter-item{
+    color: #CD3A4C !important;
+    font-weight: 600 !important;
+}
+
+.killed-filter-item{
+    color: #555555 !important;
+    font-weight: 600 !important;
+}
+
+.harbor-filter-div{
+    text-align: left;
+}
+
+.harbor-sort-item{
+    font-weight: 600;
+    color: #555555;
+    position: relative;
+    top: -1px;
+}

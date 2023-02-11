@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import React, {Suspense} from "react"
+import {Layout} from "antd"
+import { useEffect } from 'react';
+import { customSessionStorage } from './utils/customSessionStorage';
+import { Mock_User_Data, Session_Storage_Key } from './Constant';
 import './App.css';
+import FallBackComponent from "./components/FallBack";
+
+const HeaderComponent = React.lazy(() => import('./components/Header'));
+const SidebarComponanet = React.lazy(() => import('./components/Sidebar'));
+const ContentComponent = React.lazy(() => import('./components/Content'));
+
 
 function App() {
+
+  useEffect(() => {
+    customSessionStorage(Mock_User_Data, Session_Storage_Key.UserData, true)
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Suspense fallback={<FallBackComponent />}>
+        <HeaderComponent></HeaderComponent>
+        <Layout className='harbor-body-content'>
+          <SidebarComponanet></SidebarComponanet>
+          <ContentComponent></ContentComponent>
+        </Layout>
+      </Suspense>
+    </Layout>
   );
 }
 
