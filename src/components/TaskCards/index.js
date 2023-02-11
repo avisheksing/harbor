@@ -28,15 +28,19 @@ function TaskCardComponent(props){
                             {props.name.replace(/_|-/g, " ")}
                             <span className={props.type === ENUM_KILLED ? "span-tag border-gray" : "span-tag"}> 5321 </span>
                         </Col>
-                        {
-                            props.type === ENUM_KILLED ? <KilledTaskStatusComponent /> : 
-                            props.type === ENUM_PENDING ? <PendingTaskStatusComponent /> : 
-                            props.type === ENUM_FAILED ? <FailedTaskStatusComponent /> :  <RunningTaskStatusComponent />
-                        }
-                        <Col span={1} className="dot-div"> <span></span> </Col>
-                        <Col span={2} className={props.type === ENUM_PENDING ? "harbor-task-action-settings disable-now" : "harbor-task-action-settings"} onClick={props.type !== ENUM_PENDING && props.onClickSetting(props.taskId)} >
-                            <SettingIcon />
-                            <span> Settings </span>
+                        <Col span={5}>
+                            <Row>
+                                {
+                                    props.type === ENUM_KILLED ? <KilledTaskStatusComponent /> : 
+                                    props.type === ENUM_PENDING ? <PendingTaskStatusComponent /> : 
+                                    props.type === ENUM_FAILED ? <FailedTaskStatusComponent /> :  <RunningTaskStatusComponent />
+                                }
+                                <Col span={1} className="dot-div" offset={3}> <span></span> </Col>
+                                <Col span={10}  className={props.type === ENUM_PENDING ? "harbor-task-action-settings disable-now" : "harbor-task-action-settings"} onClick={props.type !== ENUM_PENDING && props.onClickSetting(props.taskId)} >
+                                    <SettingIcon />
+                                    <span> Settings </span>
+                                </Col>
+                            </Row>
                         </Col>
                     </Row>
                 </Col>
@@ -44,10 +48,14 @@ function TaskCardComponent(props){
                     <Row>
                         <Col span={19}>
                             <Row>
-                                <Col span={3} className="task-off-chain-counter"> {props.testOffChainCount} off-chain actors </Col>
-                                <Col span={1} className="dot-div"> <span className="move-top"></span> </Col>
-                                <Col span={3} className="task-block-chain-counter"> {props.testChainCount} Blockchain </Col>
-                                <Col span={16} className="task-block-chain-avatar-group" offset={1}>
+                                <Col span={7}>
+                                    <Row>
+                                    <Col span={10} className="task-off-chain-counter"> {props.testOffChainCount} off-chain actors </Col>
+                                    <Col span={1} className="dot-div"> <span className="move-top"></span> </Col>
+                                    <Col span={10} className="task-block-chain-counter" offset={1}> {props.testChainCount} Blockchain </Col>
+                                    </Row>
+                                </Col>
+                                <Col span={16} className="task-block-chain-avatar-group" pull={1}>
                                     <Avatar.Group>
                                         {props.testnetChains.map((chain) => (
                                             WEB_3_LOGO[chain.chain]

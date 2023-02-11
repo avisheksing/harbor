@@ -16,12 +16,16 @@ function ContentHeader(props){
                     <Col span={4} className="harbor-header-content-anchor"> <AddIcon className="harbor-icon-content-anchor"/>  <span> New Testnet </span> </Col>
                 </Row>
             </Col>
-            <Col span={4} className="harbor-filter-div">
-                <FilterComponent selectedFilter={props.selectedFilter} onUpdateFilter={props?.onUpdateFilter}/>
-            </Col>
-            <Col span={1} className="dot-div" style={{top: "4px", textAlign: "left"}}> <span></span> </Col>
-            <Col span={4} className="harbor-filter-div">
-                <SortComponent sortFilter={props.sortFilter} onUpdateSort={props.onUpdateSort}/>
+            <Col span={9}>
+                <Row>
+                    <Col span={10} className="harbor-filter-div" >
+                        <FilterComponent selectedFilter={props.selectedFilter} onUpdateFilter={props?.onUpdateFilter}/>
+                    </Col>
+                    <Col span={1} className="dot-div" style={{top: "4px", textAlign: "left"}}> <span></span> </Col>
+                    <Col span={10} className="harbor-filter-div" offset={1}>
+                        <SortComponent sortFilter={props.sortFilter} onUpdateSort={props.onUpdateSort}/>
+                    </Col>
+                </Row>
             </Col>
         </Row>
     )

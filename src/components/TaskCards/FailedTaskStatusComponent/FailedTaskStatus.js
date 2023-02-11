@@ -4,7 +4,7 @@ import { FailedIcon } from "../../Common/failedIcon"
 
 function FailedTaskStatusComponent(props){
     return(
-        <Col span={2} className="harbor-task-failed-status">
+        <Col span={10} className="harbor-task-failed-status">
             <FailedIcon />
             <span> Failed </span>
         </Col>

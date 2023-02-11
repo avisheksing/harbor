@@ -4,7 +4,7 @@ import { KilledIcon } from "../../Common/killedIcon"
 
 function KilledTaskStatusComponent(props){
     return(
-        <Col span={2} className="harbor-task-killed-status">
+        <Col span={10} className="harbor-task-killed-status">
             <KilledIcon />
             <span> Killed </span>
         </Col>

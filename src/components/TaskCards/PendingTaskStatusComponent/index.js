@@ -4,7 +4,7 @@ import { InProgressIcon } from "../../Common/inProgressIcon"
 
 function PendingTaskStatusComponent(props){
     return(
-        <Col span={2} className="harbor-task-in-progress-status">
+        <Col span={10} className="harbor-task-in-progress-status">
             <InProgressIcon />
             <span> Updating </span>
         </Col>
