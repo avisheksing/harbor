@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 9000;
+const port = process.env.REACT_APP_NODE_ENV || 9000;
 
 const data = {
   testnet: [

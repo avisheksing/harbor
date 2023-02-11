@@ -134,7 +134,7 @@ export const Filter_Type  = {
     "failed": ["failed"], 
     "killed": ["killed"]
 }
-export const Data_Show_Limit = 10
+export const Data_Show_Limit = 20
 export const Sort_Filter_Type = [
     {
         key: "ascending",

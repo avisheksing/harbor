@@ -1,12 +1,14 @@
 import { ENUM_ASCESNDING_SORT, ENUM_CREATED_SORT, ENUM_DESCENDING_SORT, ENUM_UPDATED_SORT } from "../Constant";
 
-export function sortData(data = {}, filterData = [], sortType = ""){
+export function sortData(data = {}, filterData = [], sortType = "", limit = 0){
     const allTaskDetails = []
 
     if(!isEmptyObject(data)){
         filterData.map((key) => {
             if(data?.[key]?.length){
-                allTaskDetails.push(...data?.[key])
+                if(allTaskDetails.length < limit){
+                    allTaskDetails.push(...data?.[key])
+                }
             }
 
             return true
@@ -34,4 +36,20 @@ export function sortData(data = {}, filterData = [], sortType = ""){
 
 const isEmptyObject = (obj = {}) => {
     return  obj && Object.keys(obj).length > 0 ? false : true
+}
+
+export const getTotalDataLength = (filterData = [], data = {}) => {
+    let dataLength = 0
+
+    if(!isEmptyObject(data)){
+        filterData.map((key) => {
+            if(data?.[key]?.length){
+                dataLength += data[key].length
+            }
+
+            return true
+        })
+    }
+
+    return dataLength
 }

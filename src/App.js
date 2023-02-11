@@ -5,6 +5,7 @@ import { customSessionStorage } from './utils/customSessionStorage';
 import { Mock_User_Data, Session_Storage_Key } from './Constant';
 import './App.css';
 import FallBackComponent from "./components/FallBack";
+import ErrorBoundary from "./components/ErrorComponent"
 
 const HeaderComponent = React.lazy(() => import('./components/Header'));
 const SidebarComponanet = React.lazy(() => import('./components/Sidebar'));
@@ -18,15 +19,17 @@ function App() {
   }, [])
 
   return (
-    <Layout>
-      <Suspense fallback={<FallBackComponent />}>
-        <HeaderComponent></HeaderComponent>
-        <Layout className='harbor-body-content'>
-          <SidebarComponanet></SidebarComponanet>
-          <ContentComponent></ContentComponent>
-        </Layout>
-      </Suspense>
-    </Layout>
+    <ErrorBoundary>
+      <Layout>
+        <Suspense fallback={<FallBackComponent />}>
+          <HeaderComponent></HeaderComponent>
+          <Layout className='harbor-body-content'>
+            <SidebarComponanet></SidebarComponanet>
+            <ContentComponent></ContentComponent>
+          </Layout>
+        </Suspense>
+      </Layout>
+    </ErrorBoundary>
   );
 }
 

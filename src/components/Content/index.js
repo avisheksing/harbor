@@ -70,6 +70,7 @@ function ContentComponent(props){
                     loading={state.loading} 
                     showTaskType={state.showTaskType}
                     sortFilter={state.sortType}
+                    count={state.dataCounts} 
                 />
             </Suspense> 
         </Content>
