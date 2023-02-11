@@ -18,11 +18,11 @@ function ContentHeader(props){
             </Col>
             <Col span={9}>
                 <Row>
-                    <Col span={10} className="harbor-filter-div" >
+                    <Col span={9} className="harbor-filter-div" >
                         <FilterComponent selectedFilter={props.selectedFilter} onUpdateFilter={props?.onUpdateFilter}/>
                     </Col>
-                    <Col span={1} className="dot-div" style={{top: "4px", textAlign: "left"}}> <span></span> </Col>
-                    <Col span={10} className="harbor-filter-div" offset={1}>
+                    <Col span={1} offset={2} className="dot-div" style={{top: "4px", textAlign: "left"}}> <span></span> </Col>
+                    <Col span={9} className="harbor-filter-div">
                         <SortComponent sortFilter={props.sortFilter} onUpdateSort={props.onUpdateSort}/>
                     </Col>
                 </Row>
